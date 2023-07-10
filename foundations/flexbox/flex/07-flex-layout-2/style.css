@@ -28,8 +28,13 @@ body {
 
 .sidebar {
   width: 300px;
+  padding: 16px;
   background: royalblue;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .card {
@@ -38,9 +43,24 @@ body {
   border-radius: 4px;
 }
 
+.cards {
+  padding: 32px;
+  display: flex;
+}
+
 .content {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex: 1;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
 }
