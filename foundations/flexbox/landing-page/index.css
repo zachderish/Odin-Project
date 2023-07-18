@@ -16,7 +16,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: #1F2937;
+    margin: 0px;
 }
 
 .header {
@@ -36,4 +36,28 @@ body {
 
 .container1 {
     background-color: #1F2937;
+}
+
+.container1 h1 {
+    font-size: 48px;
+    color: #F9FAF8
+}
+
+.awesome {
+    display: flex;
+}
+
+.awesome.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 {
+    background-color: white;
+    align-items: center;
+}
+
+.container2 .images {
+    display: flex;
+    flex-direction: row;
 }
