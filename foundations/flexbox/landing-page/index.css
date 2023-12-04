@@ -64,6 +64,36 @@ a {
     text-decoration: none;
 }
 
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info h1 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+#images {
+    display: flex;
+    gap: 50px;
+}
+
+#images img {
+    max-width: 200px;
+    max-height: 160px;
+    border: 2px solid #3882F6;
+    border-radius: 8px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .secondary-text {
     color: #E7E5EB;
     font-size: 18px;
