@@ -88,6 +88,14 @@ a {
     border-radius: 8px;
 }
 
+#quote {
+    background-color: #E7E5EB;
+}
+
+#quote p {
+    font-style: italic;
+}
+
 .image {
     display: flex;
     flex-direction: column;
