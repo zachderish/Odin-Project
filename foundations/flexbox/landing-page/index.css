@@ -78,7 +78,7 @@ a {
 
 #images {
     display: flex;
-    gap: 50px;
+    gap: 10px;
 }
 
 #images img {
@@ -89,11 +89,24 @@ a {
 }
 
 #quote {
+    display: flex;
+    flex-direction: column;
     background-color: #E7E5EB;
+    align-items: center;
+    justify-content: center;
 }
 
-#quote p {
+#quote #quote-text{
     font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+    margin: 50px 400px;
+}
+
+#quote #source {
+    font-weight: bold;
+    margin-right: 400px;
+    align-self: self-end;
 }
 
 .image {
