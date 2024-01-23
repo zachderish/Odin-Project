@@ -1,3 +1,51 @@
+const rock = document.querySelector("#rock");
+const paper = document.querySelector("#paper");
+const scissors = document.querySelector("#scissors");
+const div = document.querySelector("div");
+div.style.marginTop = "20px";
+
+let RECORD = [0,0,0];
+let GAMES_COUNTER = 0;
+
+rock.addEventListener('click', () => {
+    let computerChoice = getComputerChoice();
+
+    if (GAMES_COUNTER < 5) {
+        div.textContent = playRound(computerChoice, "Rock", RECORD);
+        GAMES_COUNTER++;
+    }
+    else {
+        div.textContent = `${RECORD[0]} WINS | ${RECORD[1]} LOSSES | ${RECORD[2]} TIES`;
+    }
+});
+
+paper.addEventListener('click', () => {
+    let computerChoice = getComputerChoice();
+
+    if (GAMES_COUNTER < 5) {
+        div.textContent = playRound(computerChoice, "Paper", RECORD);
+        GAMES_COUNTER++;
+    }
+
+    else {
+        div.textContent = `${RECORD[0]} WINS | ${RECORD[1]} LOSSES | ${RECORD[2]} TIES`;
+    }
+});
+
+scissors.addEventListener('click', () => {
+    let computerChoice = getComputerChoice();
+
+    if (GAMES_COUNTER < 5) {
+        div.textContent = playRound(computerChoice, "Scissors", RECORD);
+        GAMES_COUNTER++;
+    }
+
+    else {
+        div.textContent = `${RECORD[0]} WINS | ${RECORD[1]} LOSSES | ${RECORD[2]} TIES`;
+    }
+});
+
+
 function getComputerChoice() {
     let computerChoice = Math.floor(Math.random() * 3);
     
@@ -36,7 +84,7 @@ function playRound(computerSelection, playerSelection, playerRecord) {
 
 }
 
-function game() {
+/* function game() {
     let rounds = 5;
     let playerRecord = [0, 0, 0];
     for(let i = 0; i < rounds; i++) {
@@ -44,7 +92,7 @@ function game() {
         let computerSelection = getComputerChoice();
         console.log(playRound(computerSelection, playerSelection, playerRecord));
     }
-    
+
     if (playerRecord[0] > playerRecord[1]) {
         console.log("You win!");
     }
@@ -57,6 +105,6 @@ function game() {
 
     console.log(`Final record: ${playerRecord[0]} wins, ${playerRecord[1]} losses, ${playerRecord[2]} ties`);
 
-}
+} */
 
-game();
+//game();
